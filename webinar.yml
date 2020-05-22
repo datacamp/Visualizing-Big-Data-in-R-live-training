@@ -1,0 +1,53 @@
+# A catch and descriptive title for the webinar.
+title: Building Web Apps with Shiny
+# The technology used [r / python/ sql]
+technology: r
+# The url slug to be used for the webinar
+slug: building-web-apps-withs-shiny
+# The registration link on GotoWebinar
+registerLink: https://attendee.gotowebinar.com/register/
+# The date and time for the webinar in the same format
+time: 'Wednesday 15 April, 11 AM EST, 4 PM BST'
+# A description of the webinar
+description: >
+  Join us for this live, hands-on training where you will learn how to apply
+  the power of shiny to build web applications with R. This session will run
+  for three hours, allowing you time to really immerse yourself in the subject,
+  and includes short breaks and opportunities to ask the expert questions
+  throughout the training.
+# A list of key learning objectives
+whatWillILearn:
+  - Apply your DataCamp knowledge to new data
+  - Identify and transform data to create common graphics with ggplot2
+  - Create and use plots to answer common data questions
+  - Share visualizations to answer business questions
+# A description of how to prepare for the webinar
+whatShouldIPrepare: >
+  You can join the webinar from your web browser following the instructions
+  you receive in your registration email. All required data/resources will be
+  provided in the training.
+# A description of who should attend the webinar and what courses are prereqs.
+whoShouldAttend:
+  text: >
+    This course is open to all DataCamp Premium learners, looking to improve
+    their data visualization skills. We recommend that you have taken at least
+    one of the following courses before attending:
+  courses:
+    - title: Introduction to Data Visualization with ggplot2
+      path: /courses/introduction-to-data-visualization-with-ggplot2
+    - title: Data Visualization with ggplot2 (part 1)
+      path: /courses/data-visualization-with-ggplot2-1
+    - title: Introduction to the Tidyverse
+      path: /courses/introduction-to-the-tidyverse
+# Some details about the instructor
+instructor:
+  name: Ramnath Vaidyanathan
+  title: VP of Product Research
+  image:
+  description: >
+    Ramnath is the VP of Product Research at DataCamp, where he helps drive
+    product innovation and data-driven development. Ramnath has a PhD in
+    Operations Management from the Wharton School, and has worked as an
+    Assistant Professor at the Desautels Faculty of Management, McGill
+    University
+  linkedIn: https://www.linkedin.com/in/ramnathv
