@@ -1,53 +1,47 @@
-# A catch and descriptive title for the webinar.
-title: Building Web Apps with Shiny
-# The technology used [r / python/ sql]
+title: Visualizing Big Data in R
 technology: r
-# The url slug to be used for the webinar
-slug: building-web-apps-withs-shiny
-# The registration link on GotoWebinar
-registerLink: https://attendee.gotowebinar.com/register/
-# The date and time for the webinar in the same format
-time: 'Wednesday 15 April, 11 AM EST, 4 PM BST'
-# A description of the webinar
+slug: visualizing-big-data-in-r
+registerLink: https://attendee.gotowebinar.com/register/2974214544231059979
+time: 'Tuesday 28 July, 11 AM EDT, 4 PM GMT+1'
 description: >
-  Join us for this live, hands-on training where you will learn how to apply
-  the power of shiny to build web applications with R. This session will run
-  for three hours, allowing you time to really immerse yourself in the subject,
-  and includes short breaks and opportunities to ask the expert questions
-  throughout the training.
-# A list of key learning objectives
+  Join us for this live, hands-on training where you will learn techniques to
+  help you clearly visualize the most stubbornly tricky big datasets. As your
+  datasets get bigger, new problems begin to emerge. Having lots of
+  observations, or lots of variables, or lots of categories for a variable can
+  all make it harder to understand what is happening with your dataset. This
+  session will run for three hours, allowing you time to really immerse yourself
+  in the subject, and includes short breaks and opportunities to ask the expert
+  questions throughout the training.
 whatWillILearn:
-  - Apply your DataCamp knowledge to new data
-  - Identify and transform data to create common graphics with ggplot2
-  - Create and use plots to answer common data questions
-  - Share visualizations to answer business questions
-# A description of how to prepare for the webinar
+  - Find ways of dealing with overplotting.
+  - Learn to use correlation heatmaps.
+  - Deal with extreme faceting using trelliscopes.
 whatShouldIPrepare: >
-  You can join the webinar from your web browser following the instructions
-  you receive in your registration email. All required data/resources will be
-  provided in the training.
-# A description of who should attend the webinar and what courses are prereqs.
+  Please note, a Gmail account is required in order to use Colaboratory, a free
+  Jupyter notebook environment. You can join the webinar from your web browser
+  following the instructions you receive in your registration email. All
+  required data/resources will be provided in the training.
 whoShouldAttend:
   text: >
-    This course is open to all DataCamp Premium learners, looking to improve
-    their data visualization skills. We recommend that you have taken at least
-    one of the following courses before attending:
+    This session is open to all DataCamp Premium learners who are already
+    comfortable using ggplot2 to visualize datasets in R, and who want to master
+    the art of data visualization. We recommend that you have taken the
+    following course before attending:
   courses:
-    - title: Introduction to Data Visualization with ggplot2
-      path: /courses/introduction-to-data-visualization-with-ggplot2
-    - title: Data Visualization with ggplot2 (part 1)
-      path: /courses/data-visualization-with-ggplot2-1
-    - title: Introduction to the Tidyverse
-      path: /courses/introduction-to-the-tidyverse
+    - title: Intermediate Data Visualization with ggplot2
+      path: /courses/intermediate-data-visualization-with-ggplot2
+    - title: Data Manipulation with dplyr
+      path: /courses/data-manipulation-with-dplyr
 # Some details about the instructor
 instructor:
-  name: Ramnath Vaidyanathan
-  title: VP of Product Research
+  name: Richie Cotton
+  title: Curriculum Architect
   image:
   description: >
-    Ramnath is the VP of Product Research at DataCamp, where he helps drive
-    product innovation and data-driven development. Ramnath has a PhD in
-    Operations Management from the Wharton School, and has worked as an
-    Assistant Professor at the Desautels Faculty of Management, McGill
-    University
-  linkedIn: https://www.linkedin.com/in/ramnathv
+    Richie is the Curriculum Architect at DataCamp. He has been using R since
+    2004, in the fields of proteomics, debt collection, and chemical health and
+    safety. He has released almost 30 R packages on CRAN and Bioconductor – most
+    famously the assertive suite of packages – as well as creating and
+    contributing to many others. He also has written two books on R programming,
+    Learning R and Testing R Code.
+  linkedIn: https://www.linkedin.com/in/richierocks
