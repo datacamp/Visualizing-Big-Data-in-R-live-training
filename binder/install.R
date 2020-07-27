@@ -1,4 +1,4 @@
-# Install additional packages
+# Install all packages
 library(remotes)
 install_version("tibble", "3.0.3")
 install_version("readr", "1.3.1")
@@ -9,3 +9,4 @@ install_version("hexbin", "1.28.1")
 install_version("fst", "0.9.2")
 install_version("ggcorrplot", "0.1.3")
 install_version("trelliscopejs", "0.2.5")
+install_version("plotly", "4.9.2.1")
