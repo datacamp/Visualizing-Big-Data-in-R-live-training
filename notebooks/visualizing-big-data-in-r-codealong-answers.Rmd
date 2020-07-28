@@ -528,7 +528,7 @@ Based on mean daily volume of trades, which company was the 3rd most traded duri
 - [ ] PFE (Pfizer)
 - [x] INTC (Intel)
 
-Which company's median realtive price during the time period was lowest?
+Which company's median relative price during the time period was lowest?
 
 - [x] AAPL (Apple)
 - [ ] MSFT (Microsoft)

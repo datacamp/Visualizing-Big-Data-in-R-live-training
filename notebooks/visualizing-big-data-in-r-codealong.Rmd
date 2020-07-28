@@ -259,7 +259,7 @@ There are three homes with 10 or more bedrooms. These constitute outliers, and f
 Filter `la_homes` for rows where `bed` is less than to `10`, assigning to `la_homes10`. Count the number of rows you removed to check you've done it correctly.
 
 ```{r, filtering}
-# Filter for bed less than to 10
+# Filter for bed less than 10
 la_homes10 <- 
 
 # Calculate the number of outliers you removed
@@ -270,8 +270,7 @@ Draw the same jittered scatter plot again, this time using the filtered dataset 
 
 ```{r, bvb10_jittered}
 # Draw the previous plot, but with the la_homes10 dataset
-ggplot(la_homes10, aes(bed, bath)) +
-  geom_jitter(width = 0.4, height = 0.05)
+
 ```
 
 Most of the points are towards the bottom left of the plot.
@@ -573,7 +572,7 @@ Based on mean daily volume of trades, which company was the 3rd most traded duri
 - [ ] PFE (Pfizer)
 - [ ] INTC (Intel)
 
-Which company's median realtive price during the time period was lowest?
+Which company's median relative price during the time period was lowest?
 
 - [ ] AAPL (Apple)
 - [ ] MSFT (Microsoft)
