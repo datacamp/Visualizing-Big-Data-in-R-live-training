@@ -35,7 +35,7 @@ Here, you'll look at the LA home prices dataset to explore ways of reducing over
 
 ## Loading the packages
 
-You need a way to import a CSV file, `tibble` and `ggplot2`.
+You need `tibble`, `ggplot2`, and a way to import a CSV file.
 
 ```{r, load_pkg1, message = FALSE}
 # Load tibble, ggplot2, and a CSV reader
@@ -54,7 +54,7 @@ Read in the dataset from `data_file`, assigning the result to `la_homes`. Explor
 
 ```{r, import}
 # Read data_file from CSV
-
+la_homes <- 
 
 # Explore it
 
@@ -248,7 +248,7 @@ Draw the same plot again, this time jittering the points.
 - Use a maximum jitter distance of `0.05` in the y direction.
 
 ```{r, bvb_jittered}
-# Using la_homes, plot price vs. bed with a point layer
+# Using la_homes, plot bath vs. bed with a jittered point layer
 
 ```
 

@@ -36,13 +36,13 @@ Here, you'll look at the LA home prices dataset to explore ways of reducing over
 
 ## Loading the packages
 
-You need a way to import a CSV file, `tibble` and `ggplot2`.
+You need `tibble`, `ggplot2`, and a way to import a CSV file.
 
 ```{r, load_pkg1, message = FALSE}
 # Load tibble, ggplot2, and a CSV reader
-library(readr) # or library(data.table)
 library(tibble)
 library(ggplot2)
+library(readr) # or library(data.table)
 ```
 
 ## Exploring the dataset
