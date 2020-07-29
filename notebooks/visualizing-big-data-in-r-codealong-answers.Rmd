@@ -225,6 +225,107 @@ ggplot(la_homes, aes(bed, price)) +
   geom_point()
 ```
 
+Draw the same plot again, this time jittering the points along the x-axis.
+
+- Use a maximum jitter distance of `0.4` in the x direction.
+- Don't jitter in the y direction.
+
+```{r, jitter_x}
+# Draw the previous plot but jitter points with width 0.4
+ggplot(la_homes, aes(bed, price)) +
+  geom_jitter(width = 0.4, height = 0)
+```
+
+Most of the points are near the bottom of the plot.
+
+Draw the same jittered plot again, this time using a log10 transformation on the y-scale.
+
+```{r, log_y}
+# Draw the previous plot but use a log y-axis
+ggplot(la_homes, aes(bed, price)) +
+  geom_jitter(width = 0.4, height = 0) +
+  scale_y_log10()
+```
+
+## Scatter plots of bathrooms vs. bedrooms
+
+- `bath` contains the number of bathrooms in the home.
+
+Take a look at the distinct values in `bath` using `distinct()`.
+
+```{r, baths}
+# Look at the distinct values of the bath column
+la_homes %>% distinct(bath)
+```
+
+Notice that the dataset includes half and quarter bathrooms (whatever they are).
+
+Draw a scatter plot of `bath` versus `bed`.
+
+```{r, baths_vs_beds}
+# Using la_homes, plot bath vs. bed with a point layer
+ggplot(la_homes, aes(bed, bath)) +
+  geom_point()
+```
+
+Draw the same plot again, this time jittering the points.
+
+- Use a maximum jitter distance of `0.4` in the x direction.
+- Use a maximum jitter distance of `0.05` in the y direction.
+
+```{r, bvb_jittered}
+# Using la_homes, plot bath vs. bed with a jittered point layer
+ggplot(la_homes, aes(bed, bath)) +
+  geom_jitter(width = 0.4, height = 0.05)
+```
+
+## Filtering and transformation
+
+There are three homes with 10 or more bedrooms. These constitute outliers, and for the purpose of drawing nicer plots, we're going to remove them.
+
+Filter `la_homes` for rows where `bed` is less than to `10`, assigning to `la_homes10`. Count the number of rows you removed to check you've done it correctly.
+
+```{r, filtering}
+# Filter for bed less than 10
+la_homes10 <- la_homes %>% filter(bed < 10)
+
+# Calculate the number of outliers you removed
+nrow(la_homes) - nrow(la_homes10)
+```
+
+Draw the same jittered scatter plot again, this time using the filtered dataset (`la_homes10`). As before, use a jitter width of `0.4` and a jitter height of `0.05`.
+
+```{r, bvb10_jittered}
+# Draw the previous plot, but with the la_homes10 dataset
+ggplot(la_homes10, aes(bed, bath)) +
+  geom_jitter(width = 0.4, height = 0.05)
+```
+
+Most of the points are towards the bottom left of the plot.
+
+Draw the same jittered scatter plot again, this time applying square-root transformations to the x and y scales.
+
+```{r, sqrtsqrt}
+# Draw the previous plot but with sqrt-sqrt scales
+ggplot(la_homes10, aes(bed, bath)) +
+  geom_jitter(width = 0.4, height = 0.05) +
+  scale_x_sqrt() +
+  scale_y_sqrt()
+```
+
+Refine the plot one more time, by making the points transparent.
+
+Draw the previous plot again, setting the transparency level to 0.25 (and using a black and white theme).
+
+```{r, transparency}
+# Draw the previous plot but with transparency 0.25
+ggplot(la_homes10, aes(bed, bath)) +
+  geom_jitter(width = 0.4, height = 0.05, alpha = 0.25) +
+  scale_x_sqrt() +
+  scale_y_sqrt()
+```
+
+
 # Chapter 3: Too many variables - correlation heatmaps
 
 
