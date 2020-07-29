@@ -9,9 +9,16 @@ output:
 
 # Prelude
 
+You may need to set a CRAN mirror in ordre to download packages.
+
+```{r, set_mirror}
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+```
+
+
 Install these additional R packages.
 
-```{r, install_pkgs, echo = FALSE, result = "hide"}
+```{r, install_pkgs, result = "hide"}
 rlib <- "~/lib"
 dir.create(rlib)
 .libPaths(rlib)
@@ -47,7 +54,18 @@ library(readr) # or library(data.table)
 
 ## Exploring the dataset
 
-The dataset is here. Run this chunk!
+
+Depending on how you are accessing this file, you may need to run this to download the data file. Remove the `eval = FALSE` option to make it run.
+
+```{r, download_la, eval = FALSE}
+download.file(
+  "https://raw.githubusercontent.com/datacamp/Visualizing-Big-Data-in-R-live-training/master/data/LAhomes.csv",
+  "LAhomes.csv"
+)
+```
+
+
+The dataset is here (though double-check the directory if you just downloaded the dataset). Run this chunk!
 
 ```{r, data_file1}
 data_file <- "../data/LAhomes.csv"
@@ -98,7 +116,7 @@ ggplot(la_homes, aes(sqft, price)) +
 
 Redraw the basic scatter plot, changing the transparency level of points to `0.25`. Set a white background by using ggplot2's black and white theme.
 
-```{r, transparency}
+```{r, la_transparency}
 # Draw same scatter plot, with transparency 0.25 and black & white theme
 ggplot(la_homes, aes(sqft, price)) +
   geom_point(alpha = 0.25) +
@@ -317,7 +335,7 @@ Refine the plot one more time, by making the points transparent.
 
 Draw the previous plot again, setting the transparency level to 0.25 (and using a black and white theme).
 
-```{r, transparency}
+```{r, la10_transparency}
 # Draw the previous plot but with transparency 0.25
 ggplot(la_homes10, aes(bed, bath)) +
   geom_jitter(width = 0.4, height = 0.05, alpha = 0.25) +
@@ -356,9 +374,9 @@ The dataset is a modified version of `bayesm::Scotch`.
 - See https://www.rdocumentation.org/packages/bayesm/topics/Scotch for details.
 - Each observation is a survey response indicating the brands of Scotch consumed in the last year.
 
-Run this to download the data file.
+Depending on how you are accessing this file, you may need to run this to download the data file. Remove the `eval = FALSE` option to make it run.
 
-```{r, download_scotch}
+```{r, download_scotch, eval = FALSE}
 download.file(
   "https://github.com/datacamp/Visualizing-Big-Data-in-R-live-training/raw/master/data/scotch.fst",
   "scotch.fst"
@@ -502,9 +520,9 @@ library(trelliscopejs, lib.loc = rlib)
 
 ## Get the dataset
 
-Run this to download the data file.
+Depending on how you are accessing this file, you may need to run this to download the data file. Remove the `eval = FALSE` option to make it run.
 
-```{r, download_dow}
+```{r, download_dow, eval = FALSE}
 download.file(
   "https://github.com/datacamp/Visualizing-Big-Data-in-R-live-training/raw/master/data/dow_stock_prices.fst",
   "dow_stock_prices.fst"
